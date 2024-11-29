@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Mi Portafolio</title>
+    <!-- Vinculamos el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculamos Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #6A4C9C; /* Fondo morado */
+            color: #f0f0f0; /* Texto blanco suave */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Barra de Navegación */
+        .custom-navbar {
+            background-color: #1A1A2E; /* Fondo oscuro */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: #D8BFD8; /* Color violeta claro */
+        }
+
+        .nav-link:hover {
+            color: #9B59B6; /* Violeta oscuro al pasar el mouse */
+        }
+
+        /* Sección de Proyectos */
+        .projects-section {
+            background-color: #6A4C9C;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .projects-section h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .projects-section p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .project-card {
+            background-color: #1A1A2E;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            margin: 15px;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: #9B59B6; /* Violeta claro para el botón principal */
+            border-color: #9B59B6;
+        }
+
+        .btn-primary:hover {
+            background-color: #8E44AD; /* Violeta más oscuro al pasar el mouse */
+            border-color: #8E44AD;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">Sofía - Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Proyectos -->
+    <section class="projects-section text-center">
+        <div class="container">
+            <h2>Mis Proyectos</h2>
+            <p>Aquí te comparto algunos de los proyectos en los que he trabajado:</p>
+            
+            <!-- Proyecto 1 - Centro Turístico -->
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Img/Proyecto Parque Lanin.png" alt="Parque Nacional Lanín" class="project-img">
+                        <h4 class="project-title">Centro Turístico - Parque Nacional Lanín</h4>
+                        <p class="project-description">Desarrollé una página web para promover el Parque Nacional Lanín, destacando su belleza natural y las actividades turísticas que ofrece.</p>
+                        <a href="https://sofia1243.github.io/Centro-Turistico/" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Página de Gimnasio -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Img/Proyecto Gimnasio-SportZen.jpg" alt="SportZen" class="project-img">
+                        <h4 class="project-title">SportZen - Página de Gimnasio</h4>
+                        <p class="project-description">Creación de una página web para un gimnasio con enfoque en bienestar físico y mental, ofreciendo información sobre clases y entrenamientos.</p>
+                        <a href="https://sofia1243.github.io/SportZen.githup.io/" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - El Arte de la Pizza -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="Img/Proyecto El Arte de la Pizza.jpg" alt="El Arte de la Pizza" class="project-img">
+                        <h4 class="project-title">El Arte de la Pizza - Receta Margarita</h4>
+                        <p class="project-description">Creé una página web dedicada a una receta especial de pizza margarita, destacando los ingredientes y el proceso de preparación paso a paso.</p>
+                        <a href="https://sofia1243.github.io/El-Arte-de-la-Pizza.githup.io/" class="btn btn-primary">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vinculamos JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

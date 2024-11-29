@@ -1,0 +1,114 @@
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1A1A2E; /* Fondo oscuro como el espacio */
+    color: #f0f0f0; /* Texto blanco suave */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Barra de Navegación */
+.custom-navbar {
+    background-color: #1A1A2E; /* Fondo oscuro */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores de enlaces de la barra de navegación */
+.nav-link {
+    color: #D8BFD8; /* Color violeta claro */
+}
+
+.nav-link:hover {
+    color: #9B59B6; /* Violeta oscuro al pasar el mouse */
+}
+
+/* Sección de Introducción */
+.intro-section {
+    background: linear-gradient(45deg, #1A1A2E, #6A4C9C); /* Fondo oscuro con gradiente morado */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-section h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #9B59B6; /* Violeta claro para el botón principal */
+    border-color: #9B59B6;
+}
+
+.btn-primary:hover {
+    background-color: #8E44AD; /* Violeta más oscuro al pasar el mouse */
+    border-color: #8E44AD;
+}
+
+.btn-outline-light {
+    border-color: #D8BFD8; /* Violeta claro para bordes */
+    color: #D8BFD8;
+}
+
+.btn-outline-light:hover {
+    background-color: #D8BFD8; /* Fondo violeta claro al pasar el mouse */
+    color: #1A1A2E; /* Vuelta al color oscuro del fondo */
+}
+
+/* Imagen de perfil */
+.intro-section img {
+    border-radius: 50%;
+    border: 5px solid #fff; /* Borde blanco alrededor de la foto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones para darle un toque estelar */
+@keyframes sparkle {
+    0% {
+        opacity: 0.1;
+        transform: translateY(-20px) rotate(45deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+    100% {
+        opacity: 0.1;
+        transform: translateY(20px) rotate(-45deg);
+    }
+}
+
+/* Estrellas sutiles en el fondo */
+.intro-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    z-index: -1;
+    opacity: 0.3;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+/* Añadir sombra sutil a la sección */
+.intro-section {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+

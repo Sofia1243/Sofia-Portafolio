@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades - Mi Portafolio</title>
+    <!-- Vinculamos el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculamos Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #6A4C9C; /* Fondo morado */
+            color: #f0f0f0; /* Texto blanco suave */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Barra de Navegación */
+        .custom-navbar {
+            background-color: #1A1A2E; /* Fondo oscuro */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: #D8BFD8; /* Color violeta claro */
+        }
+
+        .nav-link:hover {
+            color: #9B59B6; /* Violeta oscuro al pasar el mouse */
+        }
+
+        /* Sección de Habilidades */
+        .skills-section {
+            background-color: #6A4C9C;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .skills-section h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills-section p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .skill-card {
+            background-color: #1A1A2E;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            margin: 15px;
+            color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #D8BFD8;
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: #9B59B6; /* Violeta claro para el botón principal */
+            border-color: #9B59B6;
+        }
+
+        .btn-primary:hover {
+            background-color: #8E44AD; /* Violeta más oscuro al pasar el mouse */
+            border-color: #8E44AD;
+        }
+
+        .btn-outline-light {
+            border-color: #D8BFD8; /* Violeta claro para bordes */
+            color: #D8BFD8;
+        }
+
+        .btn-outline-light:hover {
+            background-color: #D8BFD8; /* Fondo violeta claro al pasar el mouse */
+            color: #1A1A2E; /* Vuelta al color oscuro del fondo */
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">Sofía - Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Habilidades -->
+    <section class="skills-section text-center">
+        <div class="container">
+            <h2>Mis Habilidades</h2>
+            <p>Estas son algunas de las habilidades que me definen en mi trabajo y desarrollo profesional:</p>
+            
+            <!-- Card de Habilidades -->
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4>Organización y Planificación</h4>
+                        <p>Capacidad para gestionar proyectos, organizar tiempos y cumplir con plazos establecidos.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h4>Adaptabilidad y Flexibilidad</h4>
+                        <p>Capacidad de adaptarme a nuevos entornos, cambios y desafíos con facilidad.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Trabajo en Equipo</h4>
+                        <p>Habilidad para colaborar y contribuir al logro de objetivos comunes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Visual Studio Code</h4>
+                        <p>Experiencia en el uso de Visual Studio Code para desarrollo de proyectos web.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>HTML y CSS</h4>
+                        <p>Conocimientos en desarrollo web usando HTML y CSS para diseño y maquetación.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <h4>Bootstrap</h4>
+                        <p>Uso de Bootstrap para crear diseños web responsivos y atractivos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="Contacto.html" class="btn btn-primary mt-4">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Vinculamos JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

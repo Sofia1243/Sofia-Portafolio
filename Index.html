@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mi Portafolio</title>
+    <!-- Vinculamos el CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculamos Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #6A4C9C; /* Fondo morado */
+            color: #f0f0f0; /* Texto blanco suave */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Barra de Navegación */
+        .custom-navbar {
+            background-color: #1A1A2E; /* Fondo oscuro */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: #D8BFD8; /* Color violeta claro */
+        }
+
+        .nav-link:hover {
+            color: #9B59B6; /* Violeta oscuro al pasar el mouse */
+        }
+
+        /* Sección de Introducción */
+        .intro-section {
+            background-color: #6A4C9C;
+            color: #fff;
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .intro-section h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .intro-section p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: #9B59B6; /* Violeta claro */
+            border-color: #9B59B6;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover {
+            background-color: #8E44AD; /* Violeta más oscuro */
+            border-color: #8E44AD;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #9B59B6; /* Violeta claro al pasar el mouse */
+        }
+
+        /* Estilos adicionales para el pie de página */
+        footer {
+            background-color: #1A1A2E;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">Sofía - Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Introducción -->
+    <section class="intro-section">
+        <div class="container">
+            <h1>¡Bienvenido a mi Portafolio!</h1>
+            <p>Hola, soy Sofía, una apasionada por la tecnología, el diseño web y la creación de contenido. Aquí te mostraré algunos de mis proyectos, habilidades y formaciones. ¡Espero que disfrutes tu visita!</p>
+            <a href="Proyectos.html" class="btn btn-primary">Ver mis Proyectos</a>
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/karen-sofia-sarmiento-a424a826a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Sofia1243" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto: sofiasarmiento1243@gmail.com" title="Correo Electrónico"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Sofía | Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Vinculamos JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
